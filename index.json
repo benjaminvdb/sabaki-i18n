@@ -58,5 +58,9 @@
       "progress": 1,
       "unusedFlags": 0
     }
+  },
+  "nl": {
+    "name": "Dutch",
+    "nativeName": "Nederlands"
   }
 }
