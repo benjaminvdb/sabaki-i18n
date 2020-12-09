@@ -218,7 +218,7 @@ module.exports = {
     'Unclear Position': 'Onduidelijke stelling',
     'Even Position': 'Gelijke stelling',
     'Good for White': 'Goed voor wit',
-    'Good Move': 'Goede zet,
+    'Good Move': 'Goede zet',
     'Interesting Move': 'Interessante zet',
     'Doubtful Move': 'Twijfelachtige zet',
     'Bad Move': 'Slechte zet,
