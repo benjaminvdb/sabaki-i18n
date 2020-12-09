@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': '拷贝ASCII棋盘到剪贴板',
     'Game Info': '对局信息',
     'Manage Games…': '对局管理...',
-    'Preferences…': '首选项...'
+    'Preferences…': '首选项...',
+    'Quit': null
   },
   'updater': {
     'Download Update': '下载更新',
@@ -128,12 +129,15 @@ module.exports = {
     'Toggle Menu Bar': '显示/隐藏菜单栏',
     'Toggle Full Screen': '进入/取消全屏',
     'Show Coordinates': '显示坐标',
+    'Don’t Show': '不显示',
+    'A1 (Default)': null,
+    '1-1': null,
+    'Relative': null,
     'Show Move Numbers': '显示手数',
     'Show Move Colorization': '颜色标记评注',
     'Show Next Moves': '用圆点显示下一手',
     'Show Sibling Variations': '用圆点显示该手的其它变化',
     'Show Heatmap': '显示热图',
-    'Don’t Show': '不显示',
     'Show Win Rate': '显示胜率',
     'Show Score Lead': '显示目数差',
     'Show Winrate Graph': '显示胜率图',
@@ -390,14 +394,17 @@ module.exports = {
     'Cancel': '取消'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': null,
     'Enable hardware acceleration if possible': '硬件加速（若支持）',
     'Check for updates at startup': '启动程序时检查更新',
     'Enable sounds': '打开声音',
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Instantly play out analysis variations on board':
-      '分析模式下立即显示完整变化',
+    'Variation Replay Mode:': null,
+    'Disabled': null,
+    'Move by Move': null,
+    'Instantly': null,
     'Language:': '语言:',
     'Game Tree Style:': '对局变化树样式',
     'Compact': '紧凑',
@@ -443,7 +450,9 @@ module.exports = {
     'General': '一般',
     'Themes': '主题',
     'Engines': '引擎',
-    'Close': '关闭'
+    'Close': '关闭',
+    /* unused */ 'Instantly play out analysis variations on board':
+      '分析模式下立即显示完整变化'
   },
   'ScoreDrawer': {
     'Black': '黑棋',
@@ -504,7 +513,8 @@ module.exports = {
     'Tygem GIB': '弈城GIB',
     'Game Records': 'Game Records',
     'wBaduk NGF': 'wBaduk NGF',
-    'Smart Game Format': 'Smart Game Format'
+    'Smart Game Format': 'Smart Game Format',
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': '低中国流',
@@ -517,7 +527,6 @@ module.exports = {
     'Sanrensei Opening': '三连星',
     'Nirensei Opening': '二连星',
     'Shūsaku Opening': '秀策流',
-    '3-3 Point': '三三',
     'Low Approach': '低挂',
     'High Approach': '高挂',
     'Low Enclosure': '低位守角',
@@ -547,9 +556,17 @@ module.exports = {
     'Small Knight': '飞',
     'Two-Point Jump': '大跳',
     'Large Knight': '大飞',
+    '3-3 Point Invasion': null,
     'Shoulder Hit': '尖冲',
     'Diagonal Jump': '象飞',
+    '3-4 Point': null,
     '4-4 Point': '星位',
+    '3-3 Point': '三三',
+    '3-5 Point': null,
+    '4-5 Point': null,
+    '6-3 Point': null,
+    '6-4 Point': null,
+    '5-5 Point': null,
     'Pass': '停一手',
     'Take': '提子',
     'Atari': '打',

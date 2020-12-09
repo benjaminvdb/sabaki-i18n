@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'Copy &ASCII Diagram',
     'Game Info': 'Game &Info',
     'Manage Games…': '&Manage Games…',
-    'Preferences…': '&Preferences…'
+    'Preferences…': '&Preferences…',
+    'Quit': '&Quit'
   },
   'updater': {
     'Download Update': 'Download Update',
@@ -129,12 +130,15 @@ module.exports = {
     'Toggle Menu Bar': 'Toggle Menu &Bar',
     'Toggle Full Screen': 'Toggle &Full Screen',
     'Show Coordinates': 'Show &Coordinates',
+    'Don’t Show': '&Don’t Show',
+    'A1 (Default)': '&A1 (Default)',
+    '1-1': '&1-1',
+    'Relative': '&Relative',
     'Show Move Numbers': 'Show Move N&umbers',
     'Show Move Colorization': 'Show Move Colori&zation',
     'Show Next Moves': 'Show &Next Moves',
     'Show Sibling Variations': 'Show &Sibling Variations',
     'Show Heatmap': 'Show &Heatmap',
-    'Don’t Show': '&Don’t Show',
     'Show Win Rate': 'Show &Win Rate',
     'Show Score Lead': 'Show &Score Lead',
     'Show Winrate Graph': 'Show &Winrate Graph',
@@ -395,6 +399,8 @@ module.exports = {
     'Cancel': 'Cancel'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': p =>
+      `Please restart ${p.appName} to apply your language setting.`,
     'Enable hardware acceleration if possible':
       'Enable hardware acceleration if possible',
     'Check for updates at startup': 'Check for updates at startup',
@@ -402,8 +408,10 @@ module.exports = {
     'Jump to end after loading file': 'Jump to end after loading file',
     'Fuzzy stone placement': 'Fuzzy stone placement',
     'Animate fuzzy placement': 'Animate fuzzy placement',
-    'Instantly play out analysis variations on board':
-      'Instantly play out analysis variations on board',
+    'Variation Replay Mode:': 'Variation Replay Mode:',
+    'Disabled': 'Disabled',
+    'Move by Move': 'Move by Move',
+    'Instantly': 'Instantly',
     'Language:': 'Language:',
     'Game Tree Style:': 'Game Tree Style:',
     'Compact': 'Compact',
@@ -512,7 +520,8 @@ module.exports = {
     'Tygem GIB': 'Tygem GIB',
     'Game Records': 'Game Records',
     'wBaduk NGF': 'wBaduk NGF',
-    'Smart Game Format': 'Smart Game Format'
+    'Smart Game Format': 'Smart Game Format',
+    'PandaNET UGF': 'PandaNET UGF'
   },
   'boardmatcher': {
     'Low Chinese Opening': 'Low Chinese Opening',
@@ -525,7 +534,6 @@ module.exports = {
     'Sanrensei Opening': 'Sanrensei Opening',
     'Nirensei Opening': 'Nirensei Opening',
     'Shūsaku Opening': 'Shūsaku Opening',
-    '3-3 Point': '3-3 Point',
     'Low Approach': 'Low Approach',
     'High Approach': 'High Approach',
     'Low Enclosure': 'Low Enclosure',
@@ -555,9 +563,17 @@ module.exports = {
     'Small Knight': 'Small Knight',
     'Two-Point Jump': 'Two-Point Jump',
     'Large Knight': 'Large Knight',
+    '3-3 Point Invasion': '3-3 Point Invasion',
     'Shoulder Hit': 'Shoulder Hit',
     'Diagonal Jump': 'Diagonal Jump',
+    '3-4 Point': '3-4 Point',
     '4-4 Point': '4-4 Point',
+    '3-3 Point': '3-3 Point',
+    '3-5 Point': '3-5 Point',
+    '4-5 Point': '4-5 Point',
+    '6-3 Point': '6-3 Point',
+    '6-4 Point': '6-4 Point',
+    '5-5 Point': '5-5 Point',
     'Pass': 'Pass',
     'Take': 'Take',
     'Atari': 'Atari',

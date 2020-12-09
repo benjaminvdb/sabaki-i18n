@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'ASCIIダイアグラムをコピー',
     'Game Info': '棋譜情報',
     'Manage Games…': '棋譜を管理…',
-    'Preferences…': '環境設定…'
+    'Preferences…': '環境設定…',
+    'Quit': null
   },
   'updater': {
     'Download Update': 'アップデートをダウンロード',
@@ -101,7 +102,7 @@ module.exports = {
     'Show Engines Sidebar': 'エンジンサイドバーを表示',
     'Toggle Analysis': '解析モードを切替',
     'None of the attached engines support analysis.':
-      '登録エンジンのどれも解析をサポートしていません。',
+      '接続したエンジンのどれも解析をサポートしていません。',
     'Start Engine vs. Engine Game': 'エンジン対エンジン対局を開始',
     'Stop Engine vs. Engine Game': 'エンジン対エンジン対局を停止',
     'Generate Move': '着手を生成',
@@ -129,12 +130,15 @@ module.exports = {
     'Toggle Menu Bar': 'メニューバーを切替',
     'Toggle Full Screen': 'フルスクリーンを切替',
     'Show Coordinates': '座標を表示',
+    'Don’t Show': '表示しない',
+    'A1 (Default)': null,
+    '1-1': null,
+    'Relative': null,
     'Show Move Numbers': '手数を表示',
     'Show Move Colorization': '着手の色付け表示',
     'Show Next Moves': '次の着手を表示',
     'Show Sibling Variations': '関連変化を表示',
     'Show Heatmap': 'ヒートマップを表示',
-    'Don’t Show': '表示しない',
     'Show Win Rate': '勝率を表示',
     'Show Score Lead': '地合を表示',
     'Show Winrate Graph': '勝率グラフを表示',
@@ -228,9 +232,9 @@ module.exports = {
       `${p.engine}は着手の生成に失敗しました。`,
     '${engine} has resigned.': p => `${p.engine}が投了しました。`,
     'Please attach one or more engines first.':
-      '最初にエンジンを登録してください。',
+      '最初にエンジンを接続してください。',
     'The selected engine does not support analysis.':
-      '選択されたエンジンは解析をサポートしていません。'
+      '接続したエンジンは解析をサポートしていません。'
   },
   'sabaki.node': {
     'Do you really want to remove this node?': 'このノードを削除しますか？',
@@ -243,7 +247,7 @@ module.exports = {
   'menu.comment': {
     'Clear Annotations': '注釈をクリア',
     'Good for Black': '黒良し',
-    'Unclear Position': 'はっきりしない局面',
+    'Unclear Position': 'はっきりしない',
     'Even Position': '互角',
     'Good for White': '白良し',
     'Good Move': '好手',
@@ -260,12 +264,12 @@ module.exports = {
   'menu.engineAction': {
     'Start': '開始',
     'Stop': '停止',
-    'Detach': '登録解除',
+    'Detach': '接続解除',
     'Synchronize': '同期',
     'Generate Move': '着手を生成',
-    'Set as Analyzer': '解析器として設定',
-    'Set as Black Player': '黒番に設定',
-    'Set as White Player': '白番に設定',
+    'Set as Analyzer': '解析器に指定',
+    'Set as Black Player': '黒番に指定',
+    'Set as White Player': '白番に指定',
     'Go to Engine': 'エンジンに移動'
   },
   'AutoplayBar': {
@@ -371,7 +375,7 @@ module.exports = {
   'InfoDrawer': {
     'Manual': 'マニュアル',
     '(Unnamed Engine)': '(無名のエンジン)',
-    'Attach Engine': 'エンジンを登録',
+    'Attach Engine': 'エンジンを接続',
     'Manage Engines…': 'エンジンを管理…',
     'Previous Month': '先月',
     'Next Month': '来月',
@@ -396,6 +400,7 @@ module.exports = {
     'Cancel': 'キャンセル'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': null,
     'Enable hardware acceleration if possible':
       '可能ならハードウェアアクセラレーションを有効にする',
     'Check for updates at startup': '起動時にアップデートを確認',
@@ -403,8 +408,10 @@ module.exports = {
     'Jump to end after loading file': 'ファイルを読み込んだ後最終局面に移動',
     'Fuzzy stone placement': 'ファジーな石の置き方',
     'Animate fuzzy placement': 'ファジーな置き方をアニメーションする',
-    'Instantly play out analysis variations on board':
-      '碁盤上で解析変化を即プレイアウト',
+    'Variation Replay Mode:': null,
+    'Disabled': null,
+    'Move by Move': null,
+    'Instantly': null,
     'Language:': '言語:',
     'Game Tree Style:': '棋譜ツリースタイル:',
     'Compact': 'コンパクト',
@@ -419,7 +426,7 @@ module.exports = {
       '外部で変更された場合、ファイルの再読み込みを促す',
     'Click last played stone to remove': '最後に着手した石をクリックすると削除',
     'Invert winrate graph': '勝率グラフを反転',
-    'Path': 'パス',
+    'Path': 'パスを入力してください',
     'Browse…': 'ブラウズ…',
     'Directory not found': 'フォルダーが見つかりません',
     'File not found': 'ファイルが見つかりません',
@@ -451,7 +458,9 @@ module.exports = {
     'General': '一般',
     'Themes': 'テーマ',
     'Engines': 'エンジン',
-    'Close': '閉じる'
+    'Close': '閉じる',
+    /* unused */ 'Instantly play out analysis variations on board':
+      '碁盤上で解析変化を即プレイアウト'
   },
   'ScoreDrawer': {
     'Black': '黒',
@@ -486,8 +495,8 @@ module.exports = {
     'Very even position': '互角',
     'Good for Black': '黒良し',
     'Very good for Black': '黒優勢',
-    'Unclear position': 'はっきりしない局面',
-    'Very unclear position': '全くはっきりしない局面',
+    'Unclear position': 'はっきりしない',
+    'Very unclear position': '全くはっきりしない',
     'Edit': '編集',
     'Title': '表題',
     'Comment': 'コメント'
@@ -498,7 +507,7 @@ module.exports = {
     'Analyzer': '解析器',
     'Plays as Black': '黒を持つ',
     'Plays as White': '白を持つ',
-    'Attach Engine…': 'エンジンを登録…',
+    'Attach Engine…': 'エンジンを接続…',
     'Start Engine vs. Engine Game': 'エンジン対エンジン対局を開始',
     'Stop Engine vs. Engine Game': 'エンジン対エンジン対局を停止'
   },
@@ -512,12 +521,13 @@ module.exports = {
     'Tygem GIB': '東洋囲碁GIB',
     'Game Records': 'Game Records',
     'wBaduk NGF': '幽玄の間 NGF',
-    'Smart Game Format': 'Smart Game Format'
+    'Smart Game Format': 'Smart Game Format',
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': '低い中国流',
     'High Chinese Opening': '高い中国流',
-    'Orthodox Opening': 'Orthodox Opening',
+    'Orthodox Opening': 'オーソドックス布石',
     'Enclosure Opening': 'シマリ布石',
     'Kobayashi Opening': '小林流',
     'Small Chinese Opening': 'ミニ中国流',
@@ -525,7 +535,6 @@ module.exports = {
     'Sanrensei Opening': '三連星',
     'Nirensei Opening': '二連星',
     'Shūsaku Opening': '秀策流',
-    '3-3 Point': '三々',
     'Low Approach': '低いカカリ',
     'High Approach': '高カカリ',
     'Low Enclosure': '低いシマリ',
@@ -555,9 +564,17 @@ module.exports = {
     'Small Knight': '小ゲイマ',
     'Two-Point Jump': '二間トビ',
     'Large Knight': '大ゲイマ',
+    '3-3 Point Invasion': null,
     'Shoulder Hit': 'カタツキ',
     'Diagonal Jump': 'ハザマ',
+    '3-4 Point': null,
     '4-4 Point': '隅の星',
+    '3-3 Point': '三々',
+    '3-5 Point': null,
+    '4-5 Point': null,
+    '6-3 Point': null,
+    '6-4 Point': null,
+    '5-5 Point': null,
     'Pass': 'パス',
     'Take': 'トリ',
     'Atari': 'アタリ',

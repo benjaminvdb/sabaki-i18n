@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'SGF 다이어그램 복사',
     'Game Info': '대국 정보',
     'Manage Games…': '여러 판 관리',
-    'Preferences…': '환경 설정'
+    'Preferences…': '환경 설정',
+    'Quit': null
   },
   'updater': {
     'Download Update': '업데이트 다운로드',
@@ -129,12 +130,15 @@ module.exports = {
     'Toggle Menu Bar': '메뉴 바 켜기/끄기',
     'Toggle Full Screen': '전체화면 켜기/끄기',
     'Show Coordinates': '좌표 보기',
+    'Don’t Show': '보이지 않기',
+    'A1 (Default)': 'A1 (기본값)',
+    '1-1': '1-1',
+    'Relative': '상대적',
     'Show Move Numbers': '수순 보기',
     'Show Move Colorization': '착점 색상 보기',
     'Show Next Moves': '다음 수 보기',
     'Show Sibling Variations': '다른 변화도 보기',
     'Show Heatmap': '히트맵 보기',
-    'Don’t Show': '보이지 않기',
     'Show Win Rate': '승률 보기',
     'Show Score Lead': '집 차이 보기',
     'Show Winrate Graph': '승률 그래프 보기',
@@ -396,14 +400,18 @@ module.exports = {
     'Cancel': '취소'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': p =>
+      '언어 설정을 적용하려면 ${p.appName}을 다시 시작해 주십시오.',
     'Enable hardware acceleration if possible': '가능하다면 하드웨어 가속 사용',
     'Check for updates at startup': '시작할 때 업데이트 확인',
     'Enable sounds': '소리 켜기',
     'Jump to end after loading file': '파일을 연 후 맨 끝으로 이동',
     'Fuzzy stone placement': '돌 비껴 놓기',
     'Animate fuzzy placement': '비껴 놓을 때 움직이기',
-    'Instantly play out analysis variations on board':
-      '엔진 분석 변화도를 판에 한번에 보여주기',
+    'Variation Replay Mode:': '변화도 판에서 보여주기',
+    'Disabled': '비활성화',
+    'Move by Move': '한 수씩',
+    'Instantly': '즉시',
     'Language:': '언어',
     'Game Tree Style:': '게임 트리 모양',
     'Compact': '작게',
@@ -450,7 +458,9 @@ module.exports = {
     'General': '일반',
     'Themes': '테마',
     'Engines': '엔진',
-    'Close': '닫기'
+    'Close': '닫기',
+    /* unused */ 'Instantly play out analysis variations on board':
+      '엔진 분석 변화도를 판에 한번에 보여주기'
   },
   'ScoreDrawer': {
     'Black': '흑',
@@ -511,7 +521,8 @@ module.exports = {
     'Tygem GIB': '타이젬 GIB',
     'Game Records': '기보',
     'wBaduk NGF': '사이버오로 NGF',
-    'Smart Game Format': '스마트 게임 포맷(SGF)'
+    'Smart Game Format': '스마트 게임 포맷(SGF)',
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': '낮은 중국식 포석',
@@ -524,7 +535,6 @@ module.exports = {
     'Sanrensei Opening': '삼연성 포석',
     'Nirensei Opening': '이연성 포석',
     'Shūsaku Opening': '슈사쿠류 포석',
-    '3-3 Point': '삼삼',
     'Low Approach': '낮은 걸침',
     'High Approach': '높은 걸침',
     'Low Enclosure': '낮은 굳힘',
@@ -554,9 +564,17 @@ module.exports = {
     'Small Knight': '날일자',
     'Two-Point Jump': '두칸뜀',
     'Large Knight': '눈목자',
+    '3-3 Point Invasion': null,
     'Shoulder Hit': '어깨짚음',
     'Diagonal Jump': '밭전자',
+    '3-4 Point': null,
     '4-4 Point': '4-4 화점',
+    '3-3 Point': '삼삼',
+    '3-5 Point': null,
+    '4-5 Point': null,
+    '6-3 Point': null,
+    '6-4 Point': null,
+    '5-5 Point': null,
     'Pass': '착수 넘김',
     'Take': '따냄',
     'Atari': '단수',

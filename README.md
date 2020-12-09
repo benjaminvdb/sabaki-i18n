@@ -1,4 +1,4 @@
-# Sabaki I18n [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)](https://github.com/SabakiHQ/sabaki-i18n/actions)
+# Sabaki I18n [![CI Status](https://github.com/SabakiHQ/sabaki-i18n/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/SabakiHQ/sabaki-i18n/actions) [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)](https://github.com/SabakiHQ/sabaki-i18n/actions)
 
 Home of Sabaki's translation efforts.
 
@@ -6,14 +6,18 @@ Home of Sabaki's translation efforts.
 
 <!-- begin-progress-table -->
 
-| Language                       | File              | Progress |
-| ------------------------------ | ----------------- | -------- |
-| English (English)              | `en.i18n.js`      | 100%     |
-| 日本語 (Japanese)              | `ja.i18n.js`      | 100%     |
-| 한국어 (Korean)                | `ko.i18n.js`      | 97%      |
-| русский (Russian)              | `ru.i18n.js`      | 96%      |
-| 简体中文 (Simplified Chinese)  | `zh-Hans.i18n.js` | 100%     |
-| 繁體中文 (Traditional Chinese) | `zh-Hant.i18n.js` | 100%     |
+| Language                                    | File              | Progress |
+| ------------------------------------------- | ----------------- | -------- |
+| English (English)                           | `en.i18n.js`      | 100%     |
+| Español (Spanish)                           | `es.i18n.js`      | 98%      |
+| Français (French)                           | `fr.i18n.js`      | 98%      |
+| 日本語 (Japanese)                           | `ja.i18n.js`      | 96%      |
+| 한국어 (Korean)                             | `ko.i18n.js`      | 95%      |
+| Português Brasileiro (Brazilian Portuguese) | `pt-br.i18n.js`   | 97%      |
+| русский (Russian)                           | `ru.i18n.js`      | 99%      |
+| Türkçe (Turkish)                            | `tr.i18n.js`      | 98%      |
+| 简体中文 (Simplified Chinese)               | `zh-Hans.i18n.js` | 96%      |
+| 繁體中文 (Traditional Chinese)              | `zh-Hant.i18n.js` | 96%      |
 
 <!-- end-progress-table -->
 
